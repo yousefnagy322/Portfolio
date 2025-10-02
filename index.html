@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef Nagy - Flutter Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span>YN</span>
+                </div>
+            </div>
+            <div class="loading-text">
+                <h3>Yousef Nagy</h3>
+                <p>Flutter Developer</p>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span>YN</span>
+                </div>
+                <h2>Yousef Nagy</h2>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="fade-in typing-animation">Yousef Nagy</h1>
+                <h2 class="fade-in">Flutter Developer</h2>
+                <p class="fade-in">Building high-quality mobile applications that create <span class="highlight">real-world impact</span></p>
+                <div class="contact-icons fade-in">
+                    <a href="tel:01220082754" class="contact-icon" aria-label="Phone">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="tooltip">Call Me</span>
+                    </a>
+                    <a href="mailto:yousefnagy322@gmail.com" class="contact-icon" aria-label="Email">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="tooltip">Email Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" class="contact-icon" aria-label="LinkedIn">
+                        <div class="icon-wrapper">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/yousef-nagy" target="_blank" class="contact-icon" aria-label="GitHub">
+                        <div class="icon-wrapper">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+                </div>
+                <div class="hero-buttons fade-in">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="scroll-indicator fade-in">
+                    <div class="scroll-arrow"></div>
+                    <span>Scroll to explore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <div class="section-header">
+                        <h3>Summary</h3>
+                        <div class="section-line"></div>
+                    </div>
+                    <p>Motivated Flutter developer seeking an entry-level role to apply strong technical and problem-solving skills. Passionate about building high-quality mobile applications that create real-world impact.</p>
+                    
+                    <div class="section-header">
+                        <h3>Education</h3>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="education">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Bachelor of Computer Science</h4>
+                            <p class="subtitle">Thebes Academy</p>
+                            <p class="date">2021 – 2025 | Cairo, Egypt</p>
+                            <div class="gpa-badge">
+                                <span>GPA: 3.62</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills fade-in">
+                    <div class="section-header">
+                        <h3>Skills</h3>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-flutter"></i>
+                            </div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <span>State Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>RESTful APIs & JSON</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-dart"></i>
+                            </div>
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span>Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>CancerScan</h3>
+                            <span class="project-date">2024 – 2025</span>
+                        </div>
+                        <p class="project-tech">Technologies: Flutter, TensorFlow Lite, Firebase</p>
+                        <ul class="project-details">
+                            <li>Led the development of a mobile application capable of detecting skin cancer using an on-device CNN model deployed via TensorFlow Lite.</li>
+                            <li>Integrated Google Maps to recommend nearby doctors and clinics based on user location.</li>
+                            <li>Implemented an AI-powered chatbot (Gemini API) to answer user questions and guide them through the diagnosis flow.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Weather App</h3>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <p class="project-tech">Technologies: Flutter, Bloc, REST API</p>
+                        <ul class="project-details">
+                            <li>Built a cross-platform mobile app (Android/iOS) that displays real-time weather using a REST API.</li>
+                            <li>Implemented Bloc (Cubit) state management for predictable app flow.</li>
+                            <li>Stored user preferences (last searched city) using SharedPreferences.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Courses & Certifications</h2>
+            <div class="courses-list">
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                        <p class="course-subtitle">Cross-Platform App Development Track</p>
+                        <p class="course-institution">MCIT Egypt</p>
+                        <div class="course-status">
+                            <span class="status-badge ongoing">Ongoing</span>
+                            <span class="course-date">06/2025 – Present</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Complete Flutter & Dart Development Course</h3>
+                        <p class="course-subtitle">Tharwat Samy</p>
+                        <div class="course-status">
+                            <span class="status-badge completed">Completed</span>
+                            <span class="course-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <h3>Languages</h3>
+                        <ul class="languages">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Arabic (Native)
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                English
+                            </li>
+                        </ul>
+                        
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <a href="tel:01220082754" class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Phone</span>
+                                    <span class="detail-value">01220082754</span>
+                                </div>
+                            </a>
+                            <a href="mailto:yousefnagy322@gmail.com" class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Email</span>
+                                    <span class="detail-value">yousefnagy322@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">LinkedIn</span>
+                                    <span class="detail-value">yousefnagy322</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/yousef-nagy" target="_blank" class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">GitHub</span>
+                                    <span class="detail-value">yousef-nagy</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <span>YN</span>
+                    </div>
+                    <h3>Yousef Nagy</h3>
+                    <p>Flutter Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yousef-nagy" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:yousefnagy322@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Yousef Nagy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
