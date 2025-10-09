@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Yousef Nagy, Flutter Developer. Projects, courses, and contact information.">
+    <meta name="theme-color" content="#0a192f">
+    <link rel="canonical" href="/">
+    <meta property="og:title" content="Yousef Nagy - Flutter Developer">
+    <meta property="og:description" content="Building high-quality Flutter apps with real-world impact.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/CancerScan cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yousef Nagy - Flutter Developer">
+    <meta name="twitter:description" content="Building high-quality Flutter apps with real-world impact.">
+    <meta name="twitter:image" content="img/CancerScan cover.png">
     <title>Yousef Nagy - Flutter Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -38,8 +50,8 @@
                 </div>
                 <h2>Yousef Nagy</h2>
             </div>
-            <nav>
-                <ul class="nav-links">
+            <nav role="navigation" aria-label="Primary">
+                <ul class="nav-links" id="primary-navigation">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -50,11 +62,11 @@
                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                         <i class="fas fa-moon"></i>
                     </button>
-                    <div class="hamburger" id="hamburger">
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -90,13 +102,13 @@
                         </div>
                         <span class="tooltip">Email Me</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" class="contact-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" class="contact-icon" aria-label="LinkedIn">
                         <div class="icon-wrapper">
                             <i class="fab fa-linkedin"></i>
                         </div>
                         <span class="tooltip">LinkedIn</span>
                     </a>
-                    <a href="https://github.com/yousef-nagy" target="_blank" class="contact-icon" aria-label="GitHub">
+                    <a href="https://github.com/yousefnagy322" target="_blank" class="contact-icon" aria-label="GitHub">
                         <div class="icon-wrapper">
                             <i class="fab fa-github"></i>
                         </div>
@@ -160,25 +172,13 @@
                     <div class="skills-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-flutter"></i>
+                                <i class="devicon-flutter-plain"></i>
                             </div>
                             <span>Flutter</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <i class="fas fa-sitemap"></i>
-                            </div>
-                            <span>State Management</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <span>RESTful APIs & JSON</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-dart"></i>
+                                <i class="devicon-dart-plain"></i>
                             </div>
                             <span>Dart</span>
                         </div>
@@ -194,6 +194,18 @@
                             </div>
                             <span>Git & GitHub</span>
                         </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <span>State Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>RESTful APIs</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,15 +219,10 @@
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
+                        <img src="img/CancerScan cover.png" alt="CancerScan app cover" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View Project">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/yousefnagy322/CancerScan" target="_blank" class="project-link" aria-label="View Repo">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -237,15 +244,10 @@
                 
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
+                        <img src="img/weatherapp Cover.png" alt="Weather App cover" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View Project">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/yousefnagy322/Weather-App" target="_blank" class="project-link" aria-label="View Repo">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -261,6 +263,31 @@
                             <li>Built a cross-platform mobile app (Android/iOS) that displays real-time weather using a REST API.</li>
                             <li>Implemented Bloc (Cubit) state management for predictable app flow.</li>
                             <li>Stored user preferences (last searched city) using SharedPreferences.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="img/coffe app cover.png" alt="Coffee App cover" loading="lazy" decoding="async">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yousefnagy322/Coffee-App" target="_blank" class="project-link" aria-label="View Repo">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Coffee App</h3>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <p class="project-tech">Technologies: Flutter, Firebase</p>
+                        <ul class="project-details">
+                            <li>Modern UI for browsing and ordering coffee drinks with smooth animations.</li>
+                            <li>User auth and favorites; persistent cart with Firebase.</li>
+                            <li>Responsive layouts with custom widgets and theming.</li>
                         </ul>
                     </div>
                 </div>
@@ -344,22 +371,22 @@
                                     <span class="detail-value">yousefnagy322@gmail.com</span>
                                 </div>
                             </a>
-                            <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" class="contact-detail">
+                            <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" class="contact-detail">
                                 <div class="detail-icon">
                                     <i class="fab fa-linkedin"></i>
                                 </div>
                                 <div class="detail-content">
                                     <span class="detail-label">LinkedIn</span>
-                                    <span class="detail-value">yousefnagy322</span>
+                                    <span class="detail-value">Yousef-Nagy</span>
                                 </div>
                             </a>
-                            <a href="https://github.com/yousef-nagy" target="_blank" class="contact-detail">
+                            <a href="https://github.com/yousefnagy322" target="_blank" class="contact-detail">
                                 <div class="detail-icon">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <div class="detail-content">
                                     <span class="detail-label">GitHub</span>
-                                    <span class="detail-value">yousef-nagy</span>
+                                    <span class="detail-value">Yousef_Nagy</span>
                                 </div>
                             </a>
                         </div>
@@ -415,10 +442,10 @@
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/yousefnagy322" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/yousef-nagy" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/yousefnagy322" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:yousefnagy322@gmail.com" aria-label="Email">
@@ -437,6 +464,6 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

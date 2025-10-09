@@ -13,8 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }, 2000);
 
-    // Create floating particles
-    createParticles();
+    // Create floating particles (respect reduced motion)
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion) {
+        createParticles();
+    }
 
     // Mobile Menu Toggle
     const hamburger = document.getElementById('hamburger');
@@ -23,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('active');
+        const expanded = this.classList.contains('active');
+        this.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
     
     // Close mobile menu when clicking on a link
@@ -60,23 +65,43 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Scroll Animation
+    // Reveal on view using IntersectionObserver
     const fadeElements = document.querySelectorAll('.fade-in');
-    
-    const fadeInOnScroll = function() {
-        fadeElements.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            const elementVisible = 150;
-            
-            if (elementTop < window.innerHeight - elementVisible) {
-                element.classList.add('visible');
-            }
-        });
-    };
-    
-    // Check elements on page load and scroll
-    fadeInOnScroll();
-    window.addEventListener('scroll', fadeInOnScroll);
+    if (fadeElements.length && 'IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { root: null, rootMargin: '0px', threshold: 0.15 });
+        fadeElements.forEach(el => revealObserver.observe(el));
+    } else {
+        // Fallback
+        fadeElements.forEach(el => el.classList.add('visible'));
+    }
+
+    // Active nav highlight based on section visibility
+    const sections = document.querySelectorAll('section[id]');
+    const navMap = new Map();
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        navMap.set(a.getAttribute('href').replace('#', ''), a);
+    });
+    if (sections.length && 'IntersectionObserver' in window) {
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.id;
+                const link = navMap.get(id);
+                if (!link) return;
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.nav-links a[aria-current="page"]').forEach(l => l.removeAttribute('aria-current'));
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(sec => navObserver.observe(sec));
+    }
     
     // Back to Top Button
     const backToTopButton = document.getElementById('back-to-top');
@@ -191,37 +216,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add CSS for ripple effect
-    const rippleStyle = document.createElement('style');
-    rippleStyle.textContent = `
-        .ripple {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.6);
-            transform: scale(0);
-            animation: ripple-animation 0.6s linear;
-            pointer-events: none;
-        }
-        
-        @keyframes ripple-animation {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-        
-        .btn {
-            position: relative;
-            overflow: hidden;
-        }
-    `;
-    document.head.appendChild(rippleStyle);
+    // Ripple effect CSS now in styles.css
 });
 
 // Create floating particles
 function createParticles() {
     const particlesContainer = document.getElementById('particles');
-    const particleCount = 15;
+    if (!particlesContainer) return;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const baseCount = 15;
+    const particleCount = prefersReducedMotion ? 0 : (isMobile ? Math.max(6, Math.floor(baseCount / 2)) : baseCount);
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
