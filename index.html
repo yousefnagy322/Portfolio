@@ -3,23 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Yousef Nagy, Flutter Developer. Projects, courses, and contact information.">
+    <meta name="description" content="Yousef Nagy is a Flutter developer in Cairo, Egypt, with client delivery experience and a mobile app published on Google Play.">
+    <meta name="keywords" content="Flutter Developer, Mobile App Developer, Yousef Nagy, Dart, Clean Architecture, BLoC, Cubit, Dio, Firebase, Mobile Development, Egypt">
+    <meta name="author" content="Yousef Nagy">
     <meta name="theme-color" content="#0a192f">
-    <link rel="canonical" href="/">
-    <meta property="og:title" content="Yousef Nagy - Flutter Developer">
-    <meta property="og:description" content="Building high-quality Flutter apps with real-world impact.">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Yousef Nagy | Flutter Developer">
+    <meta property="og:description" content="Flutter developer in Cairo, Egypt, with client delivery experience and a mobile app published on Google Play.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/CancerScan cover.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yousef Nagy - Flutter Developer">
-    <meta name="twitter:description" content="Building high-quality Flutter apps with real-world impact.">
-    <meta name="twitter:image" content="img/CancerScan cover.png">
-    <title>Yousef Nagy - Flutter Developer</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Yousef Nagy | Flutter Developer">
+    <meta name="twitter:description" content="Flutter developer in Cairo, Egypt, with client delivery experience and a mobile app published on Google Play.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yousef Nagy",
+      "jobTitle": "Flutter Developer",
+      "email": "mailto:yousefnagy322@gmail.com",
+      "telephone": "+201220082754",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressCountry": "Egypt"
+      },
+      "sameAs": [
+        "https://github.com/yousefnagy322",
+        "https://www.linkedin.com/in/yousef-nagy"
+      ],
+      "knowsAbout": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Cubit",
+        "Clean Architecture",
+        "Firebase",
+        "REST APIs",
+        "Dio",
+        "TensorFlow Lite"
+      ]
+    }
+    </script>
+
+    <title>Yousef Nagy | Flutter Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <noscript><style>.loading-screen { display: none !important; } .fade-in { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
@@ -44,16 +83,18 @@
     <!-- Header with Navigation -->
     <header>
         <div class="container">
-            <div class="logo">
+            <a href="#home" class="logo" aria-label="Yousef Nagy Home">
                 <div class="logo-icon">
                     <span>YN</span>
                 </div>
                 <h2>Yousef Nagy</h2>
-            </div>
-            <nav role="navigation" aria-label="Primary">
+            </a>
+            <nav aria-label="Primary">
                 <ul class="nav-links" id="primary-navigation">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#courses" class="nav-link">Courses</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -72,6 +113,7 @@
         </div>
     </header>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
@@ -84,11 +126,27 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span>Available for opportunities</span>
+                    <span class="live-pulse"></span>
+                    <span>Available for Flutter Opportunities</span>
                 </div>
-                <h1 class="fade-in typing-animation">Yousef Nagy</h1>
-                <h2 class="fade-in">Flutter Developer</h2>
-                <p class="fade-in">Building high-quality mobile applications that create <span class="highlight">real-world impact</span></p>
+                <h1 class="fade-in hero-title">Yousef Nagy</h1>
+                <h2 class="fade-in hero-role">Flutter Developer</h2>
+                <p class="fade-in hero-description">
+                    Flutter and Dart developer with client delivery experience and an app live on Google Play. I build cross-platform apps with <span class="highlight">BLoC/Cubit</span>, <span class="highlight">Clean Architecture</span>, and REST APIs.
+                </p>
+
+                <!-- Core Tech Stack Strip -->
+                <div class="core-stack-strip fade-in" aria-label="Core Technologies">
+                    <span class="tech-pill"><i class="devicon-flutter-plain"></i>Flutter</span>
+                    <span class="tech-pill"><i class="devicon-dart-plain"></i>Dart</span>
+                    <span class="tech-pill"><i class="fas fa-layer-group"></i>BLoC / Cubit</span>
+                    <span class="tech-pill"><i class="fas fa-sitemap"></i>Clean Architecture</span>
+                    <span class="tech-pill"><i class="fas fa-network-wired"></i>REST APIs &amp; Dio</span>
+                    <span class="tech-pill"><i class="fas fa-fire"></i>Firebase</span>
+                    <span class="tech-pill"><i class="fas fa-cube"></i>GetIt (DI)</span>
+                    <span class="tech-pill"><i class="fab fa-git-alt"></i>Git &amp; GitHub</span>
+                </div>
+
                 <div class="contact-icons fade-in">
                     <a href="tel:01220082754" class="contact-icon" aria-label="Phone">
                         <div class="icon-wrapper">
@@ -102,29 +160,41 @@
                         </div>
                         <span class="tooltip">Email Me</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" class="contact-icon" aria-label="LinkedIn">
+                    <button type="button" class="contact-icon btn-copy-email" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <span class="tooltip" id="copyTooltip" role="status" aria-live="polite">Copy Email</span>
+                    </button>
+                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="LinkedIn">
                         <div class="icon-wrapper">
                             <i class="fab fa-linkedin"></i>
                         </div>
                         <span class="tooltip">LinkedIn</span>
                     </a>
-                    <a href="https://github.com/yousefnagy322" target="_blank" class="contact-icon" aria-label="GitHub">
+                    <a href="https://github.com/yousefnagy322" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="GitHub">
                         <div class="icon-wrapper">
                             <i class="fab fa-github"></i>
                         </div>
                         <span class="tooltip">GitHub</span>
                     </a>
                 </div>
+
                 <div class="hero-buttons fade-in">
                     <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <i class="fas fa-arrow-right"></i>
+                        <span>View Featured Projects</span>
+                        <i class="fas fa-arrow-down"></i>
                     </a>
                     <a href="#contact" class="btn btn-secondary">
                         <span>Get In Touch</span>
                         <i class="fas fa-paper-plane"></i>
                     </a>
+                    <a href="YOUSEF_NAGY_CV.pdf" download="Yousef-Nagy-CV.pdf" class="btn btn-outline">
+                        <span>Download CV</span>
+                        <i class="fas fa-file-download"></i>
+                    </a>
                 </div>
+
                 <div class="scroll-indicator fade-in">
                     <div class="scroll-arrow"></div>
                     <span>Scroll to explore</span>
@@ -138,75 +208,260 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text fade-in">
+                <div class="about-card fade-in">
                     <div class="section-header">
-                        <h3>Summary</h3>
+                        <div class="section-header-icon"><i class="fas fa-user"></i></div>
+                        <h3>Professional Summary</h3>
                         <div class="section-line"></div>
                     </div>
-                    <p>Motivated Flutter developer seeking an entry-level role to apply strong technical and problem-solving skills. Passionate about building high-quality mobile applications that create real-world impact.</p>
-                    
+                    <p class="about-lead">
+                        <strong>Flutter Developer</strong> with hands-on experience delivering cross-platform apps, including freelance work on a product now live on Google Play.
+                    </p>
+                    <p>
+                        I work with <strong>BLoC/Cubit</strong>, <strong>Clean Architecture</strong>, REST APIs, and Firebase. My projects also include on-device image recognition with TensorFlow Lite.
+                    </p>
+
+                </div>
+
+                <div class="education-card fade-in">
                     <div class="section-header">
+                        <div class="section-header-icon"><i class="fas fa-graduation-cap"></i></div>
                         <h3>Education</h3>
                         <div class="section-line"></div>
                     </div>
-                    <div class="education">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                    <div class="education-item">
                         <div class="education-content">
                             <h4>Bachelor of Computer Science</h4>
                             <p class="subtitle">Thebes Academy</p>
-                            <p class="date">2021 – 2025 | Cairo, Egypt</p>
+                            <p class="date"><i class="far fa-calendar-alt"></i> 2021 – 2025 | Cairo, Egypt</p>
                             <div class="gpa-badge">
-                                <span>GPA: 3.62</span>
+                                <i class="fas fa-award"></i>
+                                <span>GPA: 3.62 / 4.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="skills fade-in">
-                    <div class="section-header">
-                        <h3>Skills</h3>
-                        <div class="section-line"></div>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="devicon-flutter-plain"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Freelance delivery of a Flutter nutrition app, from mobile UX design to Google Play release.</p>
+
+            <div class="experience-timeline">
+                <div class="experience-card fade-in">
+                    <div class="experience-header">
+                        <div class="experience-role-group">
+                            <div class="exp-icon-wrap">
+                                <i class="fas fa-briefcase"></i>
                             </div>
-                            <span>Flutter</span>
+                            <div>
+                                <h3 class="experience-title">Freelance Flutter Developer</h3>
+                                <p class="experience-company">HealthyNutrition Mobile App</p>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="devicon-dart-plain"></i>
-                            </div>
-                            <span>Dart</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <span>Git & GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-sitemap"></i>
-                            </div>
-                            <span>State Management</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <span>RESTful APIs</span>
+                        <div class="experience-meta">
+                            <span class="badge badge-live"><i class="fas fa-circle-check"></i> Published on Google Play</span>
+                            <span class="badge badge-period"><i class="far fa-calendar-alt"></i> 02/2026 – Present</span>
+                            <span class="badge badge-location"><i class="fas fa-location-dot"></i> Cairo, Egypt</span>
                         </div>
                     </div>
+
+                    <div class="experience-body">
+                        <ul class="experience-points">
+                            <li><strong>Mobile UX:</strong> Designed and refined the app’s mobile flows in Figma with direct client feedback.</li>
+                            <li><strong>Flutter delivery:</strong> Rebuilt the existing web experience as a cross-platform Flutter app for iOS and Android.</li>
+                            <li><strong>Client collaboration:</strong> Worked directly with the client on features, branding, and app workflows.</li>
+                            <li><strong>Release:</strong> Published the Android app on Google Play; iOS release preparation is in progress.</li>
+                            <li><strong>Performance:</strong> Profiled rendering and refined widget rebuilds to improve responsiveness.</li>
+                        </ul>
+
+                        <div class="experience-footer">
+                            <div class="tech-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Figma UI/UX</span>
+                                <span class="tag">Cross-Platform</span>
+                                <span class="tag">Google Play</span>
+                                <span class="tag">Release Management</span>
+                            </div>
+                            <div class="exp-actions">
+                                <a href="https://play.google.com/store/apps/details?id=com.abdelrahman.healthy_nutrition&pli=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play Store</span>
+                                </a>
+                                <a href="projects/healthynutrition-freelance.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Case Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Proficiencies organized across core mobile development domains.</p>
+
+            <div class="skills-matrix">
+                <!-- Group 1: Core & Languages -->
+                <div class="skill-category-card fade-in">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages &amp; Core SDK</h3>
+                    </div>
+                    <ul class="skill-chips-list">
+                        <li class="skill-chip">
+                            <i class="devicon-flutter-plain text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Flutter</span>
+                                <span class="chip-desc">Core Mobile SDK</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="devicon-dart-plain text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Dart</span>
+                                <span class="chip-desc">OOP, Async/Await, Null Safety</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="devicon-python-plain text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Python</span>
+                                <span class="chip-desc">Scripting &amp; AI Integration</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="devicon-cplusplus-plain text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">C++</span>
+                                <span class="chip-desc">Problem Solving &amp; Logic</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 2: Architecture & State Management -->
+                <div class="skill-category-card fade-in">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3>Architecture &amp; State</h3>
+                    </div>
+                    <ul class="skill-chips-list">
+                        <li class="skill-chip">
+                            <i class="fas fa-layer-group text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">BLoC / Cubit</span>
+                                <span class="chip-desc">Unidirectional State Flow</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-cubes text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Clean Architecture</span>
+                                <span class="chip-desc">Domain, Data &amp; Presentation</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-diagram-project text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">MVC &amp; MVVM</span>
+                                <span class="chip-desc">Design &amp; Separation of Concerns</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-link text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">GetIt (DI)</span>
+                                <span class="chip-desc">Dependency Injection / Locator</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 3: Networking & Backend -->
+                <div class="skill-category-card fade-in">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Networking &amp; Backend</h3>
+                    </div>
+                    <ul class="skill-chips-list">
+                        <li class="skill-chip">
+                            <i class="fas fa-bolt text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">RESTful APIs &amp; JSON</span>
+                                <span class="chip-desc">Async Serialization &amp; Parsing</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-paper-plane text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Dio Client</span>
+                                <span class="chip-desc">Interceptors &amp; Network Resilience</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-fire text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Firebase</span>
+                                <span class="chip-desc">Auth, Firestore, Cloud Storage</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-cloud text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Azure App Service</span>
+                                <span class="chip-desc">Backend API Integration</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 4: UI, AI & Tools -->
+                <div class="skill-category-card fade-in">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-wrench"></i></div>
+                        <h3>UI, AI &amp; Tooling</h3>
+                    </div>
+                    <ul class="skill-chips-list">
+                        <li class="skill-chip">
+                            <i class="fas fa-mobile-screen text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Responsive &amp; Adaptive UI</span>
+                                <span class="chip-desc">Mobile and tablet layouts</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fas fa-brain text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">TensorFlow Lite &amp; AI</span>
+                                <span class="chip-desc">On-device CNN &amp; Gemini API</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fab fa-figma text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Figma</span>
+                                <span class="chip-desc">Design to Pixel-Perfect Code</span>
+                            </div>
+                        </li>
+                        <li class="skill-chip">
+                            <i class="fab fa-git-alt text-accent"></i>
+                            <div class="chip-info">
+                                <span class="chip-name">Git &amp; GitHub</span>
+                                <span class="chip-desc">GitFlow, PRs &amp; Versioning</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -216,90 +471,348 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="img/CancerScan cover.png" alt="CancerScan app cover" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/yousefnagy322/CancerScan" target="_blank" class="project-link" aria-label="View Repo">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
+            <p class="section-subtitle">Client delivery, multi-role systems, and mobile AI—with the work and contributions behind each app.</p>
+
+            <div class="projects-group">
+                <div class="projects-group-header">
+                    <div class="group-title-row">
+                        <span class="group-indicator"></span>
+                        <h3>Selected Projects</h3>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>CancerScan</h3>
-                            <span class="project-date">2024 – 2025</span>
-                        </div>
-                        <p class="project-tech">Technologies: Flutter, TensorFlow Lite, Firebase</p>
-                        <ul class="project-details">
-                            <li>Led the development of a mobile application capable of detecting skin cancer using an on-device CNN model deployed via TensorFlow Lite.</li>
-                            <li>Integrated Google Maps to recommend nearby doctors and clinics based on user location.</li>
-                            <li>Implemented an AI-powered chatbot (Gemini API) to answer user questions and guide them through the diagnosis flow.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="img/weatherapp Cover.png" alt="Weather App cover" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/yousefnagy322/Weather-App" target="_blank" class="project-link" aria-label="View Repo">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Weather App</h3>
-                            <span class="project-date">2024</span>
-                        </div>
-                        <p class="project-tech">Technologies: Flutter, Bloc, REST API</p>
-                        <ul class="project-details">
-                            <li>Built a cross-platform mobile app (Android/iOS) that displays real-time weather using a REST API.</li>
-                            <li>Implemented Bloc (Cubit) state management for predictable app flow.</li>
-                            <li>Stored user preferences (last searched city) using SharedPreferences.</li>
-                        </ul>
-                    </div>
+                    <p>Open a case study to see the problem, my contribution, and the tools used.</p>
                 </div>
 
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="img/coffe app cover.png" alt="Coffee App cover" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/yousefnagy322/Coffee-App" target="_blank" class="project-link" aria-label="View Repo">
-                                    <i class="fab fa-github"></i>
+                <div class="projects-grid projects-grid-featured">
+
+                    <!-- 1. HealthyNutrition (Freelance Production App) -->
+                    <div class="project-card project-card--featured fade-in">
+                        <div class="project-media-wrap project-media-wrap--lead">
+                            <span class="badge badge-live project-feature-status" aria-label="Live on Google Play"><i class="fas fa-circle-check" aria-hidden="true"></i> Live</span>
+                            <div class="image-carousel project-image-carousel" data-image-carousel role="region" aria-roledescription="carousel" aria-label="HealthyNutrition app screenshots" tabindex="0">
+                                <div class="carousel-viewport">
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/HealthyNutrition/home page.png" alt="HealthyNutrition home screen" fetchpriority="high"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/HealthyNutrition/food page.png" alt="HealthyNutrition food browsing screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/HealthyNutrition/meal maker.png" alt="HealthyNutrition meal creation screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/HealthyNutrition/nutrients page.png" alt="HealthyNutrition nutrients overview" loading="lazy" decoding="async"></div></div></div>
+                                </div>
+                                <button class="carousel-arrow carousel-arrow--previous" data-carousel-prev type="button" aria-label="Previous HealthyNutrition screenshot"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                                <button class="carousel-arrow carousel-arrow--next" data-carousel-next type="button" aria-label="Next HealthyNutrition screenshot"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                                <div class="carousel-pagination" data-carousel-pagination aria-label="Choose a HealthyNutrition screenshot"></div>
+                                <span class="carousel-counter" data-carousel-counter aria-live="polite"></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Freelance Client Delivery</span>
+                                    <h3><a href="projects/healthynutrition-freelance.html">HealthyNutrition</a></h3>
+                                </div>
+                                <span class="project-date">02/2026 – Present</span>
+                            </div>
+                            <p class="project-description">
+                                A mobile-first nutrition app rebuilt from an existing web experience, with flows for exploring foods, creating meals, and reviewing nutrition information.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">Dart</span>
+                                <span class="pill">Figma UI/UX</span>
+                                <span class="pill">Google Play</span>
+                                <span class="pill">Release Mgmt</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://play.google.com/store/apps/details?id=com.abdelrahman.healthy_nutrition&pli=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                                <a href="projects/healthynutrition-freelance.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Case Study</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Coffee App</h3>
-                            <span class="project-date">2024</span>
+
+                    <!-- 2. MOI Digital Reporting System -->
+                    <div class="project-card project-card--featured fade-in">
+                        <div class="project-media-wrap">
+                            <div class="image-carousel project-image-carousel" data-image-carousel role="region" aria-roledescription="carousel" aria-label="MOI Digital Reporting System screenshots" tabindex="0">
+                                <div class="carousel-viewport">
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/MOI/home.jpeg" alt="MOI report category selection screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/MOI/reporn form.jpeg" alt="MOI report submission form" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/MOI/officer dashboard.jpeg" alt="MOI officer dashboard" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/MOI/report detail.jpeg" alt="MOI report review screen" loading="lazy" decoding="async"></div></div></div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="project-tech">Technologies: Flutter, Firebase</p>
-                        <ul class="project-details">
-                            <li>Modern UI for browsing and ordering coffee drinks with smooth animations.</li>
-                            <li>User auth and favorites; persistent cart with Firebase.</li>
-                            <li>Responsive layouts with custom widgets and theming.</li>
-                        </ul>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Enterprise Digital Solution</span>
+                                    <h3><a href="projects/moi-digital-reporting-system.html">MOI Digital Reporting System</a></h3>
+                                </div>
+                                <span class="project-date">11/2025 – 12/2025</span>
+                            </div>
+                            <p class="project-description">A secure reporting app for three roles, with report submission, media uploads, status tracking, and admin analytics.</p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">BLoC / Cubit</span>
+                                <span class="pill">REST API</span>
+                                <span class="pill">Azure App Service</span>
+                                <span class="pill">fl_chart</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/yousefnagy322/DEPI-MOI-Digital-Report-System" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code Repository</span>
+                                </a>
+                                <a href="projects/moi-digital-reporting-system.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Case Study</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- 3. CancerScan (Graduation Project) -->
+                    <div class="project-card project-card--featured fade-in">
+                        <div class="project-media-wrap">
+                            <div class="image-carousel project-image-carousel" data-image-carousel role="region" aria-roledescription="carousel" aria-label="CancerScan screenshots" tabindex="0">
+                                <div class="carousel-viewport">
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CancerScan/home.png" alt="CancerScan home dashboard" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CancerScan/test page.png" alt="CancerScan skin test page" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CancerScan/chatbot.png" alt="CancerScan AI assistant" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CancerScan/doctors list.png" alt="CancerScan nearby doctors" loading="lazy" decoding="async"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Graduation Project · Healthcare AI</span>
+                                    <h3><a href="projects/cancerscan.html">CancerScan</a></h3>
+                                </div>
+                                <span class="project-date">2024 – 2025</span>
+                            </div>
+                            <p class="project-description">
+                                Mobile health application utilizing an on-device convolutional neural network (CNN) via TensorFlow Lite for skin lesion detection, integrated with Google Maps and Gemini AI.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">TensorFlow Lite</span>
+                                <span class="pill">Gemini API</span>
+                                <span class="pill">Firebase</span>
+                                <span class="pill">Google Maps</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/yousefnagy322/CancerScan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code Repository</span>
+                                </a>
+                                <a href="projects/cancerscan.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-images"></i>
+                                    <span>29 Screens Case Study</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. DEPI Hospital Complaint System -->
+                    <div class="project-card project-card--featured fade-in">
+                        <div class="project-media-wrap">
+                            <div class="image-carousel project-image-carousel" data-image-carousel role="region" aria-roledescription="carousel" aria-label="DEPI Hospital Complaint System screenshots" tabindex="0">
+                                <div class="carousel-viewport">
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen device-screen--white"><img src="img/Hospital/WhatsApp Image 2026-10-18 at 11.35.38 PM (3).jpeg" alt="Hospital complaint submission screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen device-screen--white"><img src="img/Hospital/WhatsApp Image 2026-10-18 at 11.35.38 PM (2).jpeg" alt="Hospital request form with priority selection" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen device-screen--white"><img src="img/Hospital/WhatsApp Image 2026-10-18 at 11.35.39 PM.jpeg" alt="Hospital staff application screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen device-screen--white"><img src="img/Hospital/WhatsApp Image 2026-10-18 at 11.35.39 PM (1).jpeg" alt="Hospital complaint status screen" loading="lazy" decoding="async"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Digital Egypt Pioneers Initiative (DEPI)</span>
+                                    <h3><a href="projects/depi-hospital-complaint-system.html">DEPI Hospital Complaint System</a></h3>
+                                </div>
+                                <span class="project-date">11/2025 – 12/2025</span>
+                            </div>
+                            <p class="project-description">A DEPI team project for structured hospital complaints, department routing, and live request status dashboards.</p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">BLoC / Cubit</span>
+                                <span class="pill">REST API</span>
+                                <span class="pill">Azure Backend</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/mohameds123/DEPI-Hospital-Complaint-system" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code Repository</span>
+                                </a>
+                                <a href="projects/depi-hospital-complaint-system.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Case Study</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Mid-Section Conversion CTA -->
+            <div class="projects-cta fade-in">
+                <div class="projects-cta-content">
+                    <h4>Building a Flutter app?</h4>
+                    <p>I can help take it from mobile UX and implementation through release.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Discuss a Project</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+
+            <!-- More Projects Archive -->
+            <div class="projects-group">
+                <div class="projects-group-header">
+                    <div class="group-title-row">
+                        <span class="group-indicator"></span>
+                        <h3>More Projects &amp; Applications</h3>
+                    </div>
+                    <p>Additional applications demonstrating real-time architectures, APIs, and polished UI design.</p>
+                </div>
+
+                <div class="projects-grid projects-grid-archive">
+
+                    <!-- 5. Collaborative Shopping List -->
+                    <div class="project-card fade-in">
+                        <div class="project-media-wrap project-media-wrap--compact">
+                            <div class="compact-card-icon">
+                                <i class="fas fa-cart-shopping"></i>
+                            </div>
+                            <span class="project-status-pill badge-firebase"><i class="fas fa-bolt"></i> Real-Time Sync</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Collaborative Utility</span>
+                                    <h3><a href="projects/collaborative-shopping-list.html">Collaborative Shopping List</a></h3>
+                                </div>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Real-time collaborative shopping list application allowing multi-device list synchronization, live updates, and item status tracking via Firebase Firestore.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">Dart</span>
+                                <span class="pill">Firebase Firestore</span>
+                                <span class="pill">BLoC / Cubit</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/yousefnagy322" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub Profile</span>
+                                </a>
+                                <a href="projects/collaborative-shopping-list.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Weather App -->
+                    <div class="project-card fade-in">
+                        <div class="project-media-wrap project-media-wrap--compact">
+                            <img src="img/weatherapp Cover.png" alt="Weather App cover" loading="lazy" decoding="async">
+                            <span class="project-status-pill badge-api"><i class="fas fa-cloud-sun"></i> REST API</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Weather Forecast</span>
+                                    <h3><a href="projects/weather-app.html">Weather App</a></h3>
+                                </div>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-description">
+                                Real-time weather forecasting mobile application with dynamic city search, Cubit state management for predictable transitions, and local caching with SharedPreferences.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">BLoC / Cubit</span>
+                                <span class="pill">REST API</span>
+                                <span class="pill">SharedPreferences</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/yousefnagy322/Weather-App" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="projects/weather-app.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Coffee App -->
+                    <div class="project-card fade-in">
+                        <div class="project-media-wrap project-media-wrap--compact project-media-wrap--carousel">
+                            <div class="image-carousel project-image-carousel" data-image-carousel role="region" aria-roledescription="carousel" aria-label="Coffee App screenshots" tabindex="0">
+                                <div class="carousel-viewport">
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CoffeApp/home.png" alt="Coffee App home and coffee browsing screen" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CoffeApp/product details.png" alt="Coffee App product details" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CoffeApp/order summery.png" alt="Coffee App order summary" loading="lazy" decoding="async"></div></div></div>
+                                    <div class="carousel-slide" data-carousel-slide><div class="device-mockup-frame"><div class="device-notch"></div><div class="device-screen"><img src="img/CoffeApp/track order.png" alt="Coffee App order tracking" loading="lazy" decoding="async"></div></div></div>
+                                </div>
+                            </div>
+                            <span class="project-status-pill badge-ui"><i class="fas fa-mug-hot"></i> Custom UI</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">E-Commerce &amp; Ordering</span>
+                                    <h3><a href="projects/coffee-app.html">Coffee App</a></h3>
+                                </div>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-description">
+                                Polished coffee shop ordering experience with smooth animations, Firebase authentication, favorites management, and a persistent shopping cart flow.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="pill">Flutter</span>
+                                <span class="pill">Firebase</span>
+                                <span class="pill">Custom Animations</span>
+                                <span class="pill">Responsive UI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/yousefnagy322/Coffee-App" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="projects/coffee-app.html" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-circle-info"></i>
+                                    <span>Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
+    <!-- Courses & Certifications Section -->
     <section id="courses" class="courses">
         <div class="container">
-            <h2 class="section-title">Courses & Certifications</h2>
-            <div class="courses-list">
+            <h2 class="section-title">Courses &amp; Certifications</h2>
+            <p class="section-subtitle">Dedicated continuous learning in Flutter architecture, UI/UX, and tooling.</p>
+
+            <div class="courses-grid">
+                <!-- Course 1 -->
                 <div class="course-item fade-in">
                     <div class="course-icon">
                         <i class="fas fa-certificate"></i>
@@ -307,24 +820,90 @@
                     <div class="course-content">
                         <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
                         <p class="course-subtitle">Cross-Platform App Development Track</p>
-                        <p class="course-institution">MCIT Egypt</p>
+                        <p class="course-institution"><i class="fas fa-landmark"></i> Ministry of Communications &amp; Information Technology (MCIT Egypt)</p>
                         <div class="course-status">
-                            <span class="status-badge ongoing">Ongoing</span>
-                            <span class="course-date">06/2025 – Present</span>
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
+                            <span class="course-date">06/2025 – 12/2025</span>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Course 2 -->
                 <div class="course-item fade-in">
                     <div class="course-icon">
-                        <i class="fas fa-certificate"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="course-content">
-                        <h3>Complete Flutter & Dart Development Course</h3>
-                        <p class="course-subtitle">Tharwat Samy</p>
+                        <h3>Complete Flutter &amp; Dart Development Course</h3>
+                        <p class="course-subtitle">Comprehensive Mobile Development Mastery</p>
+                        <p class="course-institution"><i class="fas fa-user-tie"></i> Tharwat Samy</p>
                         <div class="course-status">
-                            <span class="status-badge completed">Completed</span>
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
                             <span class="course-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Mastering Flutter: Responsive &amp; Adaptive UI Design</h3>
+                        <p class="course-subtitle">Multi-Platform Layout Engineering for Tablets, Web &amp; Mobile</p>
+                        <p class="course-institution"><i class="fas fa-user-tie"></i> Tharwat Samy</p>
+                        <div class="course-status">
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
+                            <span class="course-date">Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Flutter Advanced Course BLoC &amp; MVVM Pattern</h3>
+                        <p class="course-subtitle">Production Architecture, State Management &amp; Reactive UI</p>
+                        <p class="course-institution"><i class="fas fa-user-tie"></i> Tharwat Samy</p>
+                        <div class="course-status">
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
+                            <span class="course-date">Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Master Git &amp; GitHub: Essential Skills for Developers</h3>
+                        <p class="course-subtitle">Advanced Version Control, Branching Models &amp; Team Collaboration</p>
+                        <p class="course-institution"><i class="fas fa-user-tie"></i> Tharwat Samy</p>
+                        <div class="course-status">
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
+                            <span class="course-date">Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-item fade-in">
+                    <div class="course-icon">
+                        <i class="fas fa-map-location-dot"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Flutter App Creation: Google Maps Integration Guide</h3>
+                        <p class="course-subtitle">Geolocation, Markers, Polylines &amp; Location Services</p>
+                        <p class="course-institution"><i class="fas fa-user-tie"></i> Tharwat Samy</p>
+                        <div class="course-status">
+                            <span class="status-badge completed"><i class="fas fa-check"></i> Completed</span>
+                            <span class="course-date">Certified</span>
                         </div>
                     </div>
                 </div>
@@ -336,22 +915,14 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Interested in working together or hiring for a Flutter role? Let's connect.</p>
+
             <div class="contact-content">
                 <div class="contact-info fade-in">
                     <div class="contact-card">
-                        <h3>Languages</h3>
-                        <ul class="languages">
-                            <li>
-                                <i class="fas fa-check"></i>
-                                Arabic (Native)
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                English
-                            </li>
-                        </ul>
-                        
                         <h3>Contact Information</h3>
+                        <p class="contact-card-sub">Feel free to reach out directly through any of these channels:</p>
+
                         <div class="contact-details">
                             <a href="tel:01220082754" class="contact-detail">
                                 <div class="detail-icon">
@@ -371,57 +942,85 @@
                                     <span class="detail-value">yousefnagy322@gmail.com</span>
                                 </div>
                             </a>
-                            <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" class="contact-detail">
+                            <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" rel="noopener noreferrer" class="contact-detail">
                                 <div class="detail-icon">
                                     <i class="fab fa-linkedin"></i>
                                 </div>
                                 <div class="detail-content">
                                     <span class="detail-label">LinkedIn</span>
-                                    <span class="detail-value">Yousef-Nagy</span>
+                                    <span class="detail-value">linkedin.com/in/yousef-nagy</span>
                                 </div>
                             </a>
-                            <a href="https://github.com/yousefnagy322" target="_blank" class="contact-detail">
+                            <a href="https://github.com/yousefnagy322" target="_blank" rel="noopener noreferrer" class="contact-detail">
                                 <div class="detail-icon">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <div class="detail-content">
                                     <span class="detail-label">GitHub</span>
-                                    <span class="detail-value">Yousef_Nagy</span>
+                                    <span class="detail-value">github.com/yousefnagy322</span>
                                 </div>
                             </a>
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Cairo, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-languages-box">
+                            <h4>Languages</h4>
+                            <ul class="languages">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Arabic (Native)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>English (Professional Working)</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form fade-in">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formsubmit.co/ajax/yousefnagy322@gmail.com" method="POST" novalidate>
+                        <input type="hidden" name="_subject" value="New Flutter Portfolio Inquiry from Yousef Nagy Portfolio">
+                        <input type="hidden" name="_template" value="table">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="error-message" id="name-error"></span>
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. John Doe" aria-describedby="name-error" required>
+                            <span class="error-message" id="name-error" aria-live="polite"></span>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message" id="email-error"></span>
+                            <label for="email">Your Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="e.g. john@example.com" aria-describedby="email-error" required>
+                            <span class="error-message" id="email-error" aria-live="polite"></span>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <span class="error-message" id="message-error"></span>
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Yousef, I'd like to discuss a Flutter project..." aria-describedby="message-error" required></textarea>
+                            <span class="error-message" id="message-error" aria-live="polite"></span>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary">
+
+                        <button type="submit" class="btn btn-primary btn-block">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
+                        <p id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -432,20 +1031,22 @@
                         <span>YN</span>
                     </div>
                     <h3>Yousef Nagy</h3>
-                    <p>Flutter Developer</p>
+                    <p>Flutter Developer · Cairo, Egypt</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#courses">Courses</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/yousef-nagy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/yousefnagy322" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/yousefnagy322" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:yousefnagy322@gmail.com" aria-label="Email">
@@ -454,7 +1055,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Yousef Nagy. All rights reserved.</p>
+                <p>&copy; <span id="current-year">2026</span> Yousef Nagy. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -464,6 +1065,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <script src="image-carousel.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 </html>

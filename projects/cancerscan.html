@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a192f">
+    <meta name="description" content="CancerScan is a Flutter graduation project exploring on-device skin lesion screening, educational resources, and nearby doctor discovery.">
+    <meta property="og:title" content="CancerScan | Yousef Nagy">
+    <meta property="og:description" content="CancerScan is a Flutter graduation project exploring on-device skin lesion screening, educational resources, and nearby doctor discovery.">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CancerScan | Yousef Nagy">
+    <meta name="twitter:description" content="CancerScan is a Flutter graduation project exploring on-device skin lesion screening, educational resources, and nearby doctor discovery.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <title>CancerScan | Yousef Nagy</title>
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#project-content">Skip to main content</a>
+    <nav class="container top-bar" aria-label="Main navigation">
+        <a class="brand" href="../index.html"><span class="brand-mark">YN</span><span>Yousef Nagy</span></a>
+        <div class="top-actions"><a class="back-link" href="../index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back to projects</a><button id="project-theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme"><i class="fas fa-moon" aria-hidden="true"></i></button></div>
+    </nav>
+    <main class="project-page" id="project-content">
+        <section class="media-stage media-stage--screens" aria-label="CancerScan app screens">
+            <div class="media-feature"><img src="../img/CancerScan/home.png" alt="CancerScan home dashboard" fetchpriority="high"></div>
+            <div class="media-detail"><img src="../img/CancerScan/test page.png" alt="CancerScan skin test page" loading="lazy" decoding="async"></div>
+            <div class="media-detail"><img src="../img/CancerScan/doctors list.png" alt="CancerScan nearby doctors list" loading="lazy" decoding="async"></div>
+        </section>
+        <header class="project-intro">
+            <div class="intro-copy"><span class="meta-badge">Graduation project · 2024–2025</span><h1>CancerScan</h1><p class="lead">A graduation project exploring on-device AI support for skin-cancer screening, doctor discovery, and medical guidance.</p></div>
+            <div class="actions"><a class="btn btn-primary" href="https://github.com/yousefnagy322/CancerScan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i>View repository</a></div>
+        </header>
+        <section class="project-section overview-grid" aria-label="Project overview">
+            <article class="project-panel"><h2>About the project</h2><p>CancerScan brings a skin-check flow, educational information, and nearby doctor discovery into one mobile application.</p></article>
+            <article class="project-panel"><h2>My contribution</h2><ul class="highlights"><li>Deployed an on-device CNN model with TensorFlow Lite for skin lesion inference.</li><li>Integrated Google Maps to support nearby doctor discovery.</li><li>Built a Gemini-powered assistant flow to guide users through key app stages.</li></ul></article>
+        </section>
+        <section class="project-section"><h2>Tech stack</h2><ul class="stack-list"><li class="chip">Flutter</li><li class="chip">TensorFlow Lite</li><li class="chip">Firebase</li><li class="chip">Gemini API</li><li class="chip">Google Maps</li></ul></section>
+        <section class="project-section screenshots-section">
+            <div class="section-heading"><div><h2>App screens</h2><p class="lead">Explore the app from onboarding and screening to information and doctor discovery.</p></div><div class="gallery-tools"><span class="gallery-count" data-gallery-count aria-live="polite"></span><button class="gallery-button" data-gallery-prev type="button" aria-label="Previous screenshot" disabled><i class="fas fa-arrow-left" aria-hidden="true"></i></button><button class="gallery-button" data-gallery-next type="button" aria-label="Next screenshot"><i class="fas fa-arrow-right" aria-hidden="true"></i></button></div></div>
+            <div class="gallery" data-gallery data-image-carousel id="cancerscan-gallery" role="region" aria-roledescription="carousel" tabindex="0" aria-label="CancerScan screenshot gallery"></div>
+            <div class="carousel-pagination gallery-pagination" data-carousel-pagination aria-label="CancerScan screenshot position"></div>
+        </section>
+        <footer class="footer-note"><p>© <span id="current-year">2026</span> Yousef Nagy</p></footer>
+    </main>
+    <div class="lightbox" id="project-lightbox" aria-hidden="true">
+        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+            <button class="icon-btn lightbox-close" id="lightbox-close" type="button" aria-label="Close image preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+            <div class="lightbox-image-wrap"><img class="lightbox-image" id="lightbox-image" src="" alt=""></div>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+    <script src="project-page.js" defer></script>
+    <script src="../image-carousel.js" defer></script>
+</body>
+</html>

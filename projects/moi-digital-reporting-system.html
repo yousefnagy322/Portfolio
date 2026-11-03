@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a192f">
+    <meta name="description" content="A Flutter digital reporting project for submitting reports, viewing report status, and supporting officer review workflows.">
+    <meta property="og:title" content="MOI Digital Reporting System | Yousef Nagy">
+    <meta property="og:description" content="A Flutter digital reporting project for submitting reports, viewing report status, and supporting officer review workflows.">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="MOI Digital Reporting System | Yousef Nagy">
+    <meta name="twitter:description" content="A Flutter digital reporting project for submitting reports, viewing report status, and supporting officer review workflows.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <title>MOI Digital Reporting System | Yousef Nagy</title>
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#project-content">Skip to main content</a>
+    <nav class="container top-bar" aria-label="Main navigation">
+        <a class="brand" href="../index.html"><span class="brand-mark">YN</span><span>Yousef Nagy</span></a>
+        <div class="top-actions"><a class="back-link" href="../index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back to projects</a><button id="project-theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme"><i class="fas fa-moon" aria-hidden="true"></i></button></div>
+    </nav>
+    <main class="project-page" id="project-content">
+        <section class="media-stage media-stage--screens" aria-label="MOI Digital Reporting System app screens">
+            <div class="media-feature"><img src="../img/MOI/home.jpeg" alt="MOI report category selection screen" fetchpriority="high"></div>
+            <div class="media-detail"><img src="../img/MOI/reporn form.jpeg" alt="MOI report submission form" loading="lazy" decoding="async"></div>
+            <div class="media-detail"><img src="../img/MOI/officer dashboard.jpeg" alt="MOI officer dashboard" loading="lazy" decoding="async"></div>
+        </section>
+        <header class="project-intro">
+            <div class="intro-copy"><span class="meta-badge">Team project · 11/2025 – 12/2025</span><h1>MOI Digital Reporting System</h1><p class="lead">A secure, multi-role Flutter system for digital report submission, moderation, and analytics.</p></div>
+            <div class="actions"><a class="btn btn-primary" href="https://github.com/yousefnagy322/DEPI-MOI-Digital-Report-System" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i>View repository</a><a class="btn btn-secondary" href="../YOUSEF_NAGY_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-download" aria-hidden="true"></i>View CV</a></div>
+        </header>
+        <section class="project-section overview-grid" aria-label="Project overview">
+            <article class="project-panel"><h2>About the project</h2><p>The system supports digital report submission, review and moderation through separate workflows for the public, officers, and administrators.</p></article>
+            <article class="project-panel"><h2>My contribution</h2><ul class="highlights"><li>Built secure role-based workflows for three user roles.</li><li>Implemented report submission with image and video attachments and status tracking.</li><li>Added dashboard charts and admin analytics with <code>fl_chart</code>.</li><li>Implemented search, filters, and pagination for 500+ simulated records.</li></ul></article>
+        </section>
+        <section class="project-section"><h2>Tech stack</h2><ul class="stack-list"><li class="chip">Flutter</li><li class="chip">Bloc/Cubit</li><li class="chip">REST API</li><li class="chip">Azure App Service</li><li class="chip">fl_chart</li></ul></section>
+        <section class="project-section screenshots-section">
+            <div class="section-heading"><div><h2>App screens</h2><p class="lead">A walkthrough from sign-in and report submission through officer review.</p></div><div class="gallery-tools"><span class="gallery-count" data-gallery-count aria-live="polite"></span><button class="gallery-button" data-gallery-prev type="button" aria-label="Previous screenshot" disabled><i class="fas fa-arrow-left" aria-hidden="true"></i></button><button class="gallery-button" data-gallery-next type="button" aria-label="Next screenshot"><i class="fas fa-arrow-right" aria-hidden="true"></i></button></div></div>
+            <div class="gallery" data-gallery data-image-carousel id="moi-gallery" role="region" aria-roledescription="carousel" tabindex="0" aria-label="MOI screenshot gallery">
+                <figure class="shot"><img src="../img/MOI/login.jpeg" alt="MOI sign-in screen with guest access" loading="lazy" decoding="async"><figcaption>Sign-in and guest access</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/reporn form.jpeg" alt="MOI report submission form" loading="lazy" decoding="async"><figcaption>Report submission</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/reporn form 2.jpeg" alt="MOI report details and attachments" loading="lazy" decoding="async"><figcaption>Report details and attachments</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/officer dashboard.jpeg" alt="MOI officer dashboard with report counts" loading="lazy" decoding="async"><figcaption>Officer dashboard</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/my reports.jpeg" alt="MOI reports list and status tracking" loading="lazy" decoding="async"><figcaption>Reports and status tracking</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/report detail.jpeg" alt="MOI report review details" loading="lazy" decoding="async"><figcaption>Report review</figcaption></figure>
+                <figure class="shot"><img src="../img/MOI/report detail 2.jpeg" alt="MOI report moderation details" loading="lazy" decoding="async"><figcaption>Moderation details</figcaption></figure>
+            </div>
+            <div class="carousel-pagination gallery-pagination" data-carousel-pagination aria-label="Choose an MOI screenshot"></div>
+        </section>
+        <footer class="footer-note"><p>© <span id="current-year">2026</span> Yousef Nagy</p></footer>
+    </main>
+    <script src="project-page.js" defer></script>
+    <script src="../image-carousel.js" defer></script>
+</body>
+</html>

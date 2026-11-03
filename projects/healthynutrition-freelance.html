@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a192f">
+    <meta name="description" content="A freelance Flutter app for exploring foods, building meals, and viewing nutrition information, available on Google Play.">
+    <meta property="og:title" content="HealthyNutrition | Yousef Nagy">
+    <meta property="og:description" content="A freelance Flutter app for exploring foods, building meals, and viewing nutrition information, available on Google Play.">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HealthyNutrition | Yousef Nagy">
+    <meta name="twitter:description" content="A freelance Flutter app for exploring foods, building meals, and viewing nutrition information, available on Google Play.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <title>HealthyNutrition | Yousef Nagy</title>
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#project-content">Skip to main content</a>
+    <nav class="container top-bar" aria-label="Main navigation">
+        <a class="brand" href="../index.html"><span class="brand-mark">YN</span><span>Yousef Nagy</span></a>
+        <div class="top-actions">
+            <a class="back-link" href="../index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back to projects</a>
+            <button id="project-theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme"><i class="fas fa-moon" aria-hidden="true"></i></button>
+        </div>
+    </nav>
+    <main class="project-page" id="project-content">
+        <section class="media-stage media-stage--screens" aria-label="HealthyNutrition app screens">
+            <div class="media-feature"><img src="../img/HealthyNutrition/home page.png" alt="HealthyNutrition home screen" fetchpriority="high"></div>
+            <div class="media-detail"><img src="../img/HealthyNutrition/food page.png" alt="HealthyNutrition food browsing screen" loading="lazy" decoding="async"></div>
+            <div class="media-detail"><img src="../img/HealthyNutrition/meal maker.png" alt="HealthyNutrition meal builder screen" loading="lazy" decoding="async"></div>
+        </section>
+        <header class="project-intro">
+            <div class="intro-copy">
+                <span class="meta-badge">Freelance · Live on Google Play</span>
+                <h1>HealthyNutrition</h1>
+                <p class="lead">A cross-platform Flutter app for browsing foods, building meals, and exploring nutrition information, delivered for a freelance client.</p>
+            </div>
+            <div class="actions">
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.abdelrahman.healthy_nutrition&amp;pli=1" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play" aria-hidden="true"></i>Google Play</a>
+                <a class="btn btn-secondary" href="../index.html#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i>Contact me</a>
+            </div>
+        </header>
+        <section class="project-section overview-grid" aria-label="Project overview">
+            <article class="project-panel"><h2>About the project</h2><p>HealthyNutrition helps people explore foods and nutrition information, then turn their choices into meals through a guided mobile experience.</p></article>
+            <article class="project-panel"><h2>My contribution</h2><ul class="highlights"><li>Worked directly with the client to shape app flows, branding, and the mobile experience in Figma.</li><li>Rebuilt the existing web experience as a cross-platform Flutter app for iOS and Android.</li><li>Published the Android app on Google Play; iOS release preparation is in progress.</li><li>Profiled rendering and refined widget rebuilds to improve responsiveness.</li></ul></article>
+        </section>
+        <section class="project-section">
+            <h2>Tech stack</h2>
+            <ul class="stack-list"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Figma</li></ul>
+        </section>
+        <section class="project-section screenshots-section">
+            <div class="section-heading"><div><h2>App screens</h2><p class="lead">From food discovery to meal creation and nutrition details.</p></div><div class="gallery-tools"><span class="gallery-count" data-gallery-count aria-live="polite"></span><button class="gallery-button" data-gallery-prev type="button" aria-label="Previous screenshot" disabled><i class="fas fa-arrow-left" aria-hidden="true"></i></button><button class="gallery-button" data-gallery-next type="button" aria-label="Next screenshot"><i class="fas fa-arrow-right" aria-hidden="true"></i></button></div></div>
+            <div class="gallery" data-gallery data-image-carousel id="healthy-gallery" role="region" aria-roledescription="carousel" tabindex="0" aria-label="HealthyNutrition screenshot gallery">
+                <figure class="shot"><img src="../img/HealthyNutrition/home page.png" alt="HealthyNutrition home and nutrition content" loading="lazy" decoding="async"><figcaption>Home and nutrition content</figcaption></figure>
+                <figure class="shot"><img src="../img/HealthyNutrition/food page.png" alt="HealthyNutrition food browsing screen" loading="lazy" decoding="async"><figcaption>Food browsing</figcaption></figure>
+                <figure class="shot"><img src="../img/HealthyNutrition/food_detail page.png" alt="HealthyNutrition food detail and nutrition information" loading="lazy" decoding="async"><figcaption>Food details</figcaption></figure>
+                <figure class="shot"><img src="../img/HealthyNutrition/meal maker.png" alt="HealthyNutrition meal creation screen" loading="lazy" decoding="async"><figcaption>Meal creation</figcaption></figure>
+                <figure class="shot"><img src="../img/HealthyNutrition/nutrients page.png" alt="HealthyNutrition nutrients overview" loading="lazy" decoding="async"><figcaption>Nutrients overview</figcaption></figure>
+                <figure class="shot"><img src="../img/HealthyNutrition/advanced search.png" alt="HealthyNutrition advanced food search" loading="lazy" decoding="async"><figcaption>Advanced search</figcaption></figure>
+            </div>
+            <div class="carousel-pagination gallery-pagination" data-carousel-pagination aria-label="Choose a HealthyNutrition screenshot"></div>
+        </section>
+        <footer class="footer-note"><p>© <span id="current-year">2026</span> Yousef Nagy</p></footer>
+    </main>
+    <script src="project-page.js" defer></script>
+    <script src="../image-carousel.js" defer></script>
+</body>
+</html>
